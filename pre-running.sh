@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo hello
+/etc/init.d tor start

@@ -1,3 +1,7 @@
 #!/bin/sh
 
-echo hello
+sudo apt-get update
+sudo apt-get install tor
+
+
+

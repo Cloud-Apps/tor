@@ -5,6 +5,9 @@ framework:
 
 mem: 64M
 
+processes:
+  web: bash ./processes-web.sh
+
 pre-staging:
 - bash ./pre-staging.sh
 
