@@ -6,7 +6,10 @@ framework:
 mem: 64M
 
 processes:
-  web: bash ./processes-web.sh
+  web: /etc/init.d tor start
+
+# processes:
+#   web: perl -MIO::Socket::INET -e '$s=IO::Socket::INET->new(LocalPort=>$port, Proto=>"tcp", ReuseAddr=>1, Listen=>5) or die "socket: $!"; while($in=$s->accept()){ $in->print("Hi\n");print while <$in>;undef $in }' 
 
 pre-staging:
 - bash ./pre-staging.sh
