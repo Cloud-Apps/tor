@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo Processes Web
+/etc/init.d tor start
