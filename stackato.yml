@@ -1,0 +1,15 @@
+name: tor
+
+framework:
+  type: generic
+
+mem: 64M
+
+pre-staging:
+- bash ./pre-staging.sh
+
+post-staging:
+- bash ./post-staging.sh
+
+pre-running:
+- bash ./pre-running.sh
